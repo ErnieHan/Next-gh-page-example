@@ -10031,10 +10031,16 @@ var _jsxFileName = "C:\\Users\\ernie.yeh.t.h\\Desktop\\Next-gh-page-example\\pag
       lineNumber: 4
     },
     __self: this
-  }, "About us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "About us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
+    },
+    __self: this
+  }, "THIS IS ABOUT PAGES"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
     },
     __self: this
   }, "Back to", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -10042,13 +10048,13 @@ var _jsxFileName = "C:\\Users\\ernie.yeh.t.h\\Desktop\\Next-gh-page-example\\pag
     as: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, "Home"))));
