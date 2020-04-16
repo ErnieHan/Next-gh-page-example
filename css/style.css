@@ -18,3 +18,11 @@ body {
   background: #fff;
   color: #6c6c6c;
 }
+
+.menu-link {
+  margin-bottom: 1rem;
+}
+
+.menu-link a {
+  color: black;
+}
