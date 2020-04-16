@@ -5038,74 +5038,11 @@ var App = /*#__PURE__*/function (_Component) {
           lineNumber: 11,
           columnNumber: 11
         }
-      }), __jsx("meta", {
-        property: "og:image",
-        content: "https://taiwancanhelp.us/taiwancanhelp-og.png",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12,
-          columnNumber: 11
-        }
-      }), __jsx("meta", {
-        property: "og:image:width",
-        content: "1200",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13,
-          columnNumber: 11
-        }
-      }), __jsx("meta", {
-        property: "og:image:height",
-        content: "630",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14,
-          columnNumber: 11
-        }
-      }), __jsx("meta", {
-        property: "og:site_name",
-        content: "Taiwan Can Help",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15,
-          columnNumber: 11
-        }
-      }), __jsx("meta", {
-        property: "og:url",
-        content: "https://erniehan.github.io/dorebon/",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16,
-          columnNumber: 11
-        }
-      }), __jsx("meta", {
-        property: "og:title",
-        content: "Taiwan Can Help",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17,
-          columnNumber: 11
-        }
-      }), __jsx("meta", {
-        property: "og:locale",
-        content: "zh-TW",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18,
-          columnNumber: 11
-        }
       })), __jsx("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 21,
           columnNumber: 9
         }
       }, "This is Ernie NEXT website to Github"), __jsx("div", {
@@ -5113,7 +5050,7 @@ var App = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21,
+          lineNumber: 22,
           columnNumber: 9
         }
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -5122,14 +5059,14 @@ var App = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22,
+          lineNumber: 23,
           columnNumber: 11
         }
       }, __jsx("a", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23,
+          lineNumber: 24,
           columnNumber: 13
         }
       }, "click me go to About Page"))), __jsx("div", {
@@ -5137,7 +5074,7 @@ var App = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26,
+          lineNumber: 27,
           columnNumber: 9
         }
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -5146,14 +5083,14 @@ var App = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27,
+          lineNumber: 28,
           columnNumber: 11
         }
       }, __jsx("a", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 29,
           columnNumber: 13
         }
       }, "click me go to About Page"))));
