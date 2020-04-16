@@ -5038,30 +5038,62 @@ var App = /*#__PURE__*/function (_Component) {
           lineNumber: 11,
           columnNumber: 11
         }
-      })), "Hello World.", __jsx("h1", {
+      })), __jsx("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 9
+        }
+      }, "This is Ernie NEXT website to Github"), __jsx("div", {
+        className: "menu-link",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14,
           columnNumber: 9
         }
-      }, "This is Ernie NEXT website to Github"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/about",
         as: "/about",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 15,
-          columnNumber: 9
+          columnNumber: 11
         }
       }, __jsx("a", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16,
+          columnNumber: 13
+        }
+      }, "click me go to About Page"))), __jsx("div", {
+        className: "menu-link",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 9
+        }
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/manon",
+        as: "/manon",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
           columnNumber: 11
         }
-      }, "About")));
+      }, __jsx("a", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 13
+        }
+      }, "click me go to About Page"))));
     }
   }]);
 
