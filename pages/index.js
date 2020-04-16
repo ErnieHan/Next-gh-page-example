@@ -9,6 +9,13 @@ export class App extends Component {
         <Head>
           <title>首頁 ｜ DOREBON</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta property="og:image" content="https://taiwancanhelp.us/taiwancanhelp-og.png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:site_name" content="Taiwan Can Help" />
+          <meta property="og:url" content="https://erniehan.github.io/dorebon/" />
+          <meta property="og:title" content="Taiwan Can Help" />
+          <meta property="og:locale" content="zh-TW" />
         </Head>
         <h1>This is Ernie NEXT website to Github</h1>
         <div className="menu-link">
