@@ -5519,15 +5519,30 @@ var App = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22,
+          lineNumber: 25,
           columnNumber: 9
         }
       }, "This is Ernie NEXT website to Github"), __jsx("div", {
+        className: "ernie",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 9
+        }
+      }, "testing"), __jsx("style", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 9
+        }
+      }, "\n            .ernie {\n              font-size: 24px;\n            }\n          "), __jsx("div", {
         className: "menu-link",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23,
+          lineNumber: 34,
           columnNumber: 9
         }
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -5536,14 +5551,14 @@ var App = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24,
+          lineNumber: 35,
           columnNumber: 11
         }
       }, __jsx("a", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25,
+          lineNumber: 39,
           columnNumber: 13
         }
       }, "click me go to About Page"))), __jsx("div", {
@@ -5551,7 +5566,7 @@ var App = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 42,
           columnNumber: 9
         }
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -5560,14 +5575,14 @@ var App = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 43,
           columnNumber: 11
         }
       }, __jsx("a", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
+          lineNumber: 47,
           columnNumber: 13
         }
       }, "click me go to About Page"))));

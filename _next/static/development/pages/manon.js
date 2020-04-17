@@ -282,7 +282,7 @@ var Manon = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!**************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmanon&absolutePagePath=%2FUsers%2FErnie%2FDesktop%2FGithub%2Fdorebon%2Fpages%2Fmanon.js ***!
   \**************************************************************************************************************************************/
@@ -305,5 +305,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=manon.js.map
