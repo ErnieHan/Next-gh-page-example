@@ -11,8 +11,9 @@ html {
 
 body {
   margin: 0;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "微軟正黑體", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "微軟正黑體",
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #fff;
@@ -25,4 +26,9 @@ body {
 
 .menu-link a {
   color: black;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
 }

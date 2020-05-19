@@ -2,11 +2,46 @@ import React, { Component } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import styles from "../css/Header.module.css";
+import QRCode from "qrcode";
+import Header from "../src/components/Header";
 
 export class App extends Component {
+  state = {
+    qrcode: null,
+    name: false,
+  };
+
+  createQRCode = async () => {
+    var options = {
+      errorCorrectionLevel: "H",
+      type: "image/jpeg",
+      quality: 1,
+      margin: 2,
+      color: {
+        dark: "#cb7d74",
+        light: "#ffffff",
+      },
+    };
+    try {
+      const response = await QRCode.toDataURL(
+        "https://twtest-pks.chowsangsang.com/personalised-jewellery/DIYPromessa/pairRing?designListId=DSLBC0003866TE",
+        options
+      );
+      this.setState({
+        qrcode: response,
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
   render() {
     return (
       <div>
+        <div>
+          <button onClick={this.createQRCode}>click</button>
+          <img src={this.state.qrcode} alt="qrcode" />
+        </div>
+
         <Head>
           <title>首頁 ｜ DOREBON</title>
           <meta
@@ -22,6 +57,16 @@ export class App extends Component {
           <meta property="og:title" content="Taiwan Can Help" />
           <meta property="og:locale" content="zh-TW" /> */}
         </Head>
+        <Header name={this.state.name ? "ernie" : "mary"} />
+        <button
+          onClick={() => {
+            this.setState({
+              name: !this.state.name,
+            });
+          }}
+        >
+          click
+        </button>
         <h1 className={styles.error}>This is Ernie NEXT website to Github</h1>
         <div className="ernie">testing</div>
         <style>
