@@ -1,0 +1,4 @@
+{
+  "/eshop-tw/api/shopping/v1/compositions/channelCatalogItems?*": "/product",
+  "/eshop-hk/api/shopping/v1/channelCatalogItems/itemList?*": "/product-list"
+}

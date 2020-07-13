@@ -1,20 +1,24 @@
 {
-  "name": "gh-pages",
-  "author": "thierryc",
+  "name": "dorebon",
+  "author": "ernie",
   "version": "1.0.1",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 8080",
     "build": "next build",
     "start": "next start",
+    "server": "node ./json-server/server.js",
     "export": "next export",
     "deploy": "rm -rf node_modules/.cache && npm run build && npm run export && npm touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "upload:old": "npm run build && npm run export && echo next.erniexx.website >> out/CNAME && git add . && git commit -m \"update\" && git subtree push --prefix out origin gh-pages",
-    "upload": "npm run build && npm run export && git add . && git commit -m \"update\" && git subtree push --prefix out origin gh-pages"
+    "upload": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
+    "clipboard": "^2.0.6",
+    "json-server": "^0.16.1",
     "next": "latest",
     "qrcode": "^1.4.4",
     "react": "^16.0.0",
+    "react-clipboard.js": "^2.0.16",
     "react-dom": "^16.0.0"
   },
   "license": "ISC",

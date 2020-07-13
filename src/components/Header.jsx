@@ -1,44 +1,46 @@
 import React, { useState, useRef, useEffect } from "react";
 
+let timer;
+
 function Header(props) {
-  // 宣告一個新的 state 變數，我們稱作為「ring1」。
+  // state
   const [ring1, setRing1] = useState({
     gold: "18kw",
     size: "8",
     width: "24",
     text: "",
   });
-  const [products, setProducts] = useState([]);
+
+  const [state, setState] = useState({
+    ring1: {
+      gold: "p950",
+      name: "ernie",
+    },
+    ring2: {
+      gold: "18kw",
+      name: "mary",
+    },
+  });
+
+  //ref
   const inputEl = useRef(null);
+
+  // lists
   const ringSizeList = [
     { name: "08", value: "8" },
     { name: "09", value: "9" },
     { name: "10", value: "10" },
   ];
-  // componentDidMount
+
   useEffect(() => {
+    // componentDidMount
     console.log("componentDidMount");
-    getMiniCart();
     return () => {
+      // componentWillUmMount
       console.log("componentWillUmMount");
     };
   }, []);
-  async function getMiniCart() {
-    try {
-      const response = await fetch(`http://localhost:3031/minicart`, {
-        method: "GET",
-      });
-      if (response.ok) {
-        const result = await response.json();
-        const { cartItems } = result;
-        setProducts(cartItems);
-      } else {
-        throw new Error("GET_MINICART_FAILED");
-      }
-    } catch (error) {
-      console.error("getMiniCart", error);
-    }
-  }
+
   function changeSize(size) {
     setRing1({ ...ring1, size: size.value });
   }
@@ -66,16 +68,21 @@ function Header(props) {
     await element.focus();
     element.selectionEnd = startPos + 1;
   }
+
+  function handleClick() {
+    setState({
+      ...state,
+      ring1: {
+        ...state.ring1,
+        name: "happy",
+      },
+    });
+  }
+
   return (
     <div>
-      {products.map((data, index) => (
-        <div key={index}>
-          <p>{data.itemId}</p>
-          <div>
-            <img src={data.information.imageUrl} alt="productImg" />
-          </div>
-        </div>
-      ))}
+      {console.log(state)}
+      <button onClick={handleClick}>click</button>
       <input
         type="text"
         ref={inputEl}

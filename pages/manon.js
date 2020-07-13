@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class Manon extends Component {
-  render() {
-    return <div>manon</div>;
-  }
+export default function Manon() {
+  return (
+    <div>
+      manon.jsx
+      <input type="search" />
+    </div>
+  );
 }
-
-export default Manon;

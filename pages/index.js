@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import Link from "next/link";
 import Head from "next/head";
-import styles from "../css/Header.module.css";
 import QRCode from "qrcode";
-import Header from "../src/components/Header";
+import Clipboard from "react-clipboard.js";
 
 export class App extends Component {
   state = {
-    qrcode: null,
+    qrcode: this.props.qrcode,
     name: false,
+    website: "18K白色黃金戒指",
   };
+
+  componentDidMount() {}
 
   createQRCode = async () => {
     var options = {
@@ -18,7 +20,7 @@ export class App extends Component {
       quality: 1,
       margin: 2,
       color: {
-        dark: "#cb7d74",
+        dark: "#DEBB8C",
         light: "#ffffff",
       },
     };
@@ -34,16 +36,18 @@ export class App extends Component {
       console.error(error);
     }
   };
+  onSuccess = (e) => {
+    console.info(e.text);
+  };
   render() {
     return (
       <div>
         <div>
-          <button onClick={this.createQRCode}>click</button>
+          <button onClick={this.createQRCode}>產生qr-code</button>
           <img src={this.state.qrcode} alt="qrcode" />
         </div>
-
         <Head>
-          <title>首頁 ｜ DOREBON</title>
+          <title>dorebon.jsx</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
@@ -57,25 +61,12 @@ export class App extends Component {
           <meta property="og:title" content="Taiwan Can Help" />
           <meta property="og:locale" content="zh-TW" /> */}
         </Head>
-        <Header name={this.state.name ? "ernie" : "mary"} />
-        <button
-          onClick={() => {
-            this.setState({
-              name: !this.state.name,
-            });
-          }}
-        >
-          click
-        </button>
-        <h1 className={styles.error}>This is Ernie NEXT website to Github</h1>
+        <h1>以「角落」為設計單位</h1>
+        <h2>
+          免費<span style={{ fontSize: "36px", color: "tan" }}>7</span>
+          天無理由退貨
+        </h2>
         <div className="ernie">testing</div>
-        <style>
-          {`
-            .ernie {
-              font-size: 24px;
-            }
-          `}
-        </style>
         <div className="menu-link">
           <Link
             href={process.env.BACKEND_URL + "/about"}
@@ -89,12 +80,49 @@ export class App extends Component {
             href={process.env.BACKEND_URL + "/manon"}
             as={process.env.BACKEND_URL + "/manon"}
           >
-            <a>click me go to About Page</a>
+            <a>click me go to Manon Page</a>
           </Link>
         </div>
+        <input
+          type="text"
+          value={this.state.website}
+          onChange={(e) => {
+            this.setState({
+              website: e.target.value,
+            });
+          }}
+        />
+        <Clipboard
+          data-clipboard-text={this.state.website}
+          onSuccess={this.onSuccess}
+        >
+          复制链结
+        </Clipboard>
       </div>
     );
   }
 }
+
+App.getInitialProps = async () => {
+  var options = {
+    errorCorrectionLevel: "H",
+    type: "image/jpeg",
+    quality: 1,
+    margin: 2,
+    color: {
+      dark: "#DEBB8C",
+      light: "#ffffff",
+    },
+  };
+  try {
+    const response = await QRCode.toDataURL(
+      "https://twtest-pks.chowsangsang.com/personalised-jewellery/DIYPromessa/pairRing?designListId=DSLBC0003866TE",
+      options
+    );
+    return { qrcode: response };
+  } catch (error) {
+    console.error(error);
+  }
+};
 
 export default App;
